@@ -1,0 +1,45 @@
+Program execution might be likened to reading a book.
+Each basic instruction can be given a short name that is indicative of its function and easy to remember.
+Sometimes programs are executed by a hybrid method of the two techniques.
+Read the code for the next instruction from the cell indicated by the program counter.
+Increment the program counter so it points to the next instruction.
+Instructions that modify the program counter are often known as "jumps" and allow for loops.
+Early CPUs were composed of many separate components.
+The set of arithmetic operations that a particular ALU supports may be limited to addition and subtraction.
+The information stored in memory may represent practically anything.
+The CPU contains a special set of memory cells called registers that can be read and written to much more rapidly than the main memory area.
+Registers are used for the most frequently needed data items to avoid having to access main memory every time data is needed.
+In some systems it is necessary to give the appearance of running several programs simultaneously.
+One means by which this is done is with a special signal called an interrupt.
+The interrupt generator might be causing several hundred interrupts per second.
+It may appear that many programs are running at the same time even though only one is ever executing in any given instant.
+This frees up time for other programs to execute so that many programs may be run simultaneously without unacceptable speed loss.
+Such designs tend to be useful only for specialized tasks due to the large scale of program organization required to successfully utilize most of the available resources at once.
+The technologies that made the Arpanet possible spread and evolved.
+The network spread beyond academic and military institutions and became known as the Internet.
+Initially these facilities were available primarily to people working in high-tech environments.
+Logic gates are a common abstraction which can apply to most of the above digital or analog paradigms.
+Programs that learn and adapt are part of the emerging field of artificial intelligence and machine learning.
+There are thousands of different programming languages.
+Firmware is the technology which has the combination of both hardware and software such as BIOS chip.
+The act of processing is mainly regulated by the CPU.
+A vulnerability is a system susceptibility or flaw.
+They may have been added by an authorized party to allow some legitimate access.
+Social engineering aims to convince a user to disclose secrets such as passwords.
+The Internet is a potential attack vector for such machines if connected.
+A successful attack on a military aviation system that controls munitions could have even more serious consequences.
+Connected cars may use wifi and bluetooth to communicate with onboard consumer devices.
+Another innovative feature for that time was the user interface combining a keyboard with a monitor and light pen for correcting texts and drawing on screen.
+Workstations were characterized by high-performance processors and graphics displays.
+Worldwide sales of PCs had begun to fall as many consumers moved to tablets and smartphones for gifts and personal use.
+These systems had text-only displays and only floppy disks for storage.
+Workstations are commonly connected to a local area network and run multi-user operating systems.
+The monitor often utilizes a touchscreen as an optional method of user input.
+The laptop is opened for use and closed up for transport.
+Some internal upgrades to laptops, such as memory and hard disk drive upgrades are often easily performed.
+Some use a limited range of desktop components to provide better performance at the expense of battery life.
+Some motherboards have the video display adapter, sound and other peripherals integrated onto the motherboard.
+This protects against overloading the supply, and guards against performance degradation.
+Modern CPUs are equipped with a fan attached via heat sink.
+Often a motherboard will also contain one or more peripheral buses and physical connectors for expansion purposes.
+Main memory is much faster than mass storage devices like hard disk drives or optical discs.
