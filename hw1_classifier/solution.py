@@ -1,6 +1,20 @@
-
 import nltk
 import os
+def my_fun(str):
+	line = str
+	line = line.replace(" and "," ")
+	line = line.replace(" is "," ")
+	line = line.replace(" of "," ")
+	line = line.replace(" in "," ")
+	line = line.replace(" are "," ")
+	line = line.replace(" to "," ")
+	line = line.replace(" a "," ")
+	line = line.replace(" the "," ")
+	line = line.replace(" both "," ")
+	line = line.replace(" be "," ")
+	return line
+
+
 #Initialize the training data (restaurants and labels)
 train = []
 label = []
@@ -9,6 +23,7 @@ file = open("computer.txt")
 i = 0
 while 1:
 	line = file.readline()
+	line = my_fun(line)
 	if not line:
 		break
 	else:
@@ -19,6 +34,8 @@ file.close()
 file = open("music.txt")
 while 1:
 	line = file.readline()
+	line = my_fun(line)
+
 	if not line:
 		break
 	else:
@@ -29,6 +46,8 @@ file.close()
 file = open("biology.txt")
 while 1:
 	line = file.readline()
+	line = my_fun(line)
+
 	if not line:
 		break
 	else:
