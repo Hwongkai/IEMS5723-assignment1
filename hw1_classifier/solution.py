@@ -1,17 +1,8 @@
 import nltk
 import os
-def my_fun(str):
+def my_optimization(str):#delete some meaningless words to make classifier perform better
 	line = str
-	line = line.replace(" and "," ")
-	line = line.replace(" is "," ")
-	line = line.replace(" of "," ")
-	line = line.replace(" in "," ")
-	line = line.replace(" are "," ")
-	line = line.replace(" to "," ")
-	line = line.replace(" a "," ")
-	line = line.replace(" the "," ")
-	line = line.replace(" both "," ")
-	line = line.replace(" be "," ")
+	line = line.lower().replace(" and "," ").replace(" of "," ").replace(" to "," ").replace(" is "," ")
 	return line
 
 
@@ -23,7 +14,7 @@ file = open("computer.txt")
 i = 0
 while 1:
 	line = file.readline()
-	line = my_fun(line)
+	line = my_optimization(line)
 	if not line:
 		break
 	else:
@@ -34,7 +25,7 @@ file.close()
 file = open("music.txt")
 while 1:
 	line = file.readline()
-	line = my_fun(line)
+	line = my_optimization(line)
 
 	if not line:
 		break
@@ -46,7 +37,7 @@ file.close()
 file = open("biology.txt")
 while 1:
 	line = file.readline()
-	line = my_fun(line)
+	line = my_optimization(line)
 
 	if not line:
 		break
@@ -84,11 +75,11 @@ file = open("test.txt")
 i = 0
 while 1:
 	line = file.readline()
-	
+	line_opt = line.lower()
 	if not line:
 		break
 	else:
-		test.append(nltk.word_tokenize(line))
+		test.append(nltk.word_tokenize(line_opt))
 		Result_Label.append(classifier.classify(document_features(test[i])))
 	i = i+1
 file.close()
@@ -96,16 +87,20 @@ file.close()
 file = open("result.txt","w")
 for a in range(0,len(test)):
 	for i in range(0,len(test[a])):
-		file.write(test[a][i])
-		file.write(' ')
+		if i == 0:
+			file.write(test[a][i].capitalize())
+			file.write(' ')
+		else:
+			file.write(test[a][i])
+			file.write(' ')
 	file.write(Result_Label[a])
 	file.write('\n')
 file.close()
 
-
+Right_result="BBBBBCCCCCMMMMM"
 documents_2 = []
 for a in range(0,len(test)) :
-	documents_2.append((test[a],Result_Label[a]))
+	documents_2.append((test[a],Right_result[a]))
 #feature = frequency distribution of restaurant words in documents + label
 doc_feat_2 = []
 for a in range(0,len(test)) :
